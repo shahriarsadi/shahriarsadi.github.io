@@ -1,0 +1,23 @@
+#color{
+    color:mediumvioletred
+    
+}
+.font {
+    font-family:fantasy
+}
+#color2{
+    color:firebrick
+}
+.font2 {
+    font-family:serif
+}
+img{
+    padding:5px;
+    border:4px solid #021a40   
+}
+#shape{
+   
+    background: #E80C7A;
+    padding: 5px;
+    list-style-type: square
+}

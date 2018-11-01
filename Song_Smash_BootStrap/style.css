@@ -1,0 +1,25 @@
+.heading{
+     font-family: sans-serif;
+    text-align: center;
+    color: black;
+}
+.responsive {
+    margin-left: auto;
+    margin-right: auto;
+    margin align-content: center
+    
+    width:70px;
+    height: 150px;
+}
+.container-fluid{
+    background-color: cadetblue;
+    padding: 10px;
+}
+.row{
+   background-color: cadetblue;
+   padding: 5px;
+}
+.col-lg-4{
+    background-color: cadetblue;
+}
+

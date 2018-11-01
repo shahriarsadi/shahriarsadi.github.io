@@ -1,0 +1,188 @@
+<!--declaring HTML-->
+<!DOCTYPE html>
+<html>
+<!--head-->
+  <head>
+<!--meta content for adjusting to mobile-->
+      
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--title is what is presented on the tab-->
+    <title>Dibner QR Web App</title>
+      <link rel="icon" href="color.gif" type="image/gif" sizes="16x16">
+
+<!--      llink for atttaching google icons-->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--link for linking css-->
+  <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+    
+
+<!--body of webpage-->
+  <body>
+<!--declaring a div for creation of nav bar-->
+<div class="topnav" id="myTopnav">
+<!--listing out nav content-->
+<!--nested div is to add logo to nav bar-->
+   <div class ="active">
+       <a href="https://library.nyu.edu/">
+       <img src="nyu.jpg" alt="Nyu Libraries Logo" height="30px" width="200px">
+           </div>
+       
+<!--end of nested div for logo-->
+<!--the tabs on nav bar-->
+  
+  <a href="#Events">Events</a>
+  <a href="#Announcments">Announcments</a>
+  <a href="#Noise">Noise</a>
+  <a href="#Tracker">Tracker</a>
+<!--using java to get button to show menu when small screen-->
+  <a href="javascript:void(0);" 
+  class="icon" 
+  onclick="myFunction()">
+<!--      using google material design icon i frame-->
+    <i class="large material-icons">menu</i>
+  </a>
+</div>
+   
+<!--done with nav bar-->
+    
+<!--first tab of events  -->
+<!--    main div for everything in this tab-->
+<div id="Events">
+          <h1 class="event_heading">Welcome to NYU Bern Dibner Library</h1>
+          <h3 class ="mini_heading">Your Time of check in is 3:02pm</h3>
+          <h4 class ="mini_heading"> You have 11 hours and 58 minutes until closing</h4>
+          <h1 class ="event_heading">Next event  " Machine Learning with MatLab" In 58 minutes </h1>
+        <h2 class = mini_heading> Next event held in LC 433 / Event starts at 4PM / Click on Event to RSVP</h2>
+    
+<!--    new nested div created to create flex box around images and divs inside nested div hold those images-->
+    <div class="flex-container">
+          <div>
+              <a href="https://nyu.libcal.com/event/4641097"><img  src="matlab2.png" height="170" width="200"></a>
+          </div>
+          <div>
+              <a href="https://nyu.libcal.com/event/4641101"><img src ="gis.png" height="150" width="200"></a>
+          </div>
+          <div>
+        
+              <a href="https://nyu.libcal.com/event/4641116"><img src ="datamanagment.png" height="150" width="200"></a>
+          </div>
+      </div>
+    </div>
+<!--end of events tab-->
+<!--    start of announcments-->
+<div id = "Announcments">
+           <h1 class="headingwhite"> Visual Loud Speaker Announcments </h1>
+          <br>
+    
+            <h2 class="headingred"> [1:00PM] Please Attend the MatLab Event Happening Today At 4PM in Room LC 443</h2>
+           <h2 class="headingred"> [2:43PM] Students in Snack Lounge please reduce noise level</h2>
+           <h2 class="headingred"> [3:01PM] Students Please be Aware Their is a Planned Fire Alarm at 6PM</h2>
+    <button class = button type="button" onclick="alert('Audio Playing')">Click Here To Litsen to Announcments Again</button>
+   
+          </div>
+    <div>
+<!--end of announcments-->
+<!--        start of noise-->
+      <div id = "Noise">
+            <h2 class="heading">Noise Level To loud Report it ASAP</h2>
+            <img src=stan.gif class="responsive">
+<!--          creation of form-->
+          <form action="omg.gif">
+  <h3 class="heading">What location would you like to report?</h3> 
+  <input type="text" value="Ex. Snack Lounge">
+ 
+ 
+  <input type="submit" value="Report">
+</form> 
+<!--          end of form-->
+           <h2 class="heading">You may also call us at (646) 997-3530 </h2>
+           
+           
+      </div>
+    
+<!--end of noise-->
+<!--start of tracker-->
+
+            <div id = "Tracker">
+            <h2 class="headingwhite"> Two Days in A Row Nice Job !
+                Three More Days Until Raffle Prizes</h2>
+   
+               
+                <img src="star.png" class="responsive2" >
+            <h3 class="headingwhite"> If you win, you can choose from the prizes below !</h3>
+                 <div class="flex-container">
+          <div>
+              <a ><img  src="dunkin.png" height="170" width="200"></a>
+          </div>
+          <div>
+              <a><img src ="switch.png" height="150" width="200"></a>
+          </div>
+          <div>
+        
+              <a ><img src ="gift.png" height="150" width="200"></a>
+          </div>
+      </div>
+                
+               
+   
+        
+            
+          
+      </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<script>
+var d = new Date();
+document.getElementById("demo").innerHTML = d.getHours();
+</script>
+<!--use of java script to get menu to happen based on screen size-->
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+    
+<!--end of java script for menu-->
+
+  </body>
+<!--body of webpage-->
+</html>
+<!--declaring HTML OVER-->

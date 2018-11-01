@@ -1,0 +1,247 @@
+/*style of nav bar*/
+.topnav {
+
+/*    declaring background color of nav bar*/
+  background-color: blueviolet;
+  position:inherit;
+   position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    
+
+}
+/*style of elements in nav bar*/
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 12px;
+  text-decoration: none;
+  font-size: 20px;
+  
+}
+/*style when hovering over elements*/
+.topnav a:hover {
+  background-color: rebeccapurple;
+  
+}
+/*logo background color*/
+.active {
+  background-color: mediumpurple;
+  color: white;
+}
+/*end of nav bar styling*/
+
+
+
+/*events tab styling*/
+
+#Events{
+/*    creates background: */
+    background-image: url(lineart.gif);
+    
+    max-height:500hv;
+    padding-top: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+ 
+    
+}
+.event_heading{
+/*    font for text heading*/
+font-family: sans-serif;
+   color: blueviolet;
+    text-align: center;
+
+}
+/*font for smaller heading*/
+.mini_heading{
+     font-family: sans-serif;
+    text-align: center;
+    color: black;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 170;
+    width: 200;
+}
+/*events tab styling done*/
+
+#Announcments{
+    background-image:url(color.gif);
+    max-height:   800px;
+ 
+    padding-top: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+.headingwhite{
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    
+}
+.headingred{
+    font-family: sans-serif;
+    text-align: center;
+   
+    -webkit-text-stroke: .5px black;
+   color: whitesmoke;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+
+
+}
+/*announcments design over*/
+/*noise design begins*/
+#Noise{
+  
+    background-image: url(flip.gif);
+    max-height:900px;
+    padding-top: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+.heading{
+    font-family: sans-serif;
+    text-align: center;
+    color: blueviolet;
+}
+.responsive {
+    margin: auto;
+    width: 100%;
+    height: 300px;
+}
+.responsive2 {
+    width: 100%;
+    height: 200px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid blueviolet;
+    border-radius: 4px;
+}
+
+/*noise design over tracker design begins*/
+#Tracker{
+    background-image: url(litt.gif);
+     max-height:900px;
+    padding-top: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+.button{
+    margin: auto;
+}
+html{
+    scroll-behavior: smooth;
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*anything posted after this only effects mobile version*/
+/*this relates to styleing of the screen adjustment*/
+.topnav .icon {
+display: none;
+}
+@media screen and (max-width: 600px) {
+/*    top nav not first child makes it only display the first tab*/
+  .topnav a:not(:first-child) {display: none;}
+/*    this icon is the placeholder for the menu icon*/
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+/*    responsive position makes it auto go to menu instead of stacking tabs*/
+  .topnav.responsive {position: fixed;}
+/*    responsive icon keeps the menu icon from moving out of place */
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+    
+  .topnav.responsive a {
+/*      shows how tab looks in menu form*/
+    float: none;
+    display: block;
+    text-align: left;
+}
+/*anything after this only happens in mobile which is litttt*/
+    
+#Events{
+    
+    background:white;
+    max-height: 950px;
+   
+}
+#Announcments{
+    background:blueviolet;
+    max-height:  900px;
+
+}
+#Noise{
+    background:white;
+}
+.responsive2 {
+    width: 100%;
+    height: 100px;
+}
