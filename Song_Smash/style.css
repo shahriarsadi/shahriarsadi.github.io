@@ -1,5 +1,5 @@
 .heading{
-     font-family: sans-serif;
+     font-family: "KoHo";font-size: 20px;
     text-align: center;
     color: black;
 }
@@ -8,8 +8,8 @@
     margin-right: auto;
     margin align-content: center
     
-    width:70px;
-    height: 150px;
+    width:50px;
+    height: 100px;
 }
 .grid-container {
   display: grid;
@@ -23,5 +23,9 @@
     margin: auto;
     margin align-content: center;
 }
-
+body {
+    font-family: 'Rancho';font-size: 35px;
+    text-align: center;
+    color: darkslateblue;
+}
 
