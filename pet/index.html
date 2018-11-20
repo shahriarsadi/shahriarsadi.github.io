@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Cat Decorator</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+
+  
+ </head>
+ <body>
+  <h1 id="title">Decorate Mr. Fluffins</h1>
+     
+<!--  main image of cat -->
+  <img src="http://pngimg.com/uploads/cat/cat_PNG50497.png" height="500" width="450" id="center" >
+  
+  <div id="container">
+<!--  creating divs which carry elements used to decorate-->
+  <div id="mydiv"><img src="http://pluspng.com/img-png/moustache-png-mustache-png-image-2000.png" height="35" width="100"></div>
+ 
+  <div id="mydiv2"><img src="http://purepng.com/public/uploads/large/purepng.com-black-top-hathatsstandard-sizeblackcliparttopred-round-1421526359368p8ziu.png" height="200" width="100"></div>
+      
+  <div id="mydiv3"><img src="https://vignette.wikia.nocookie.net/clubpenguin/images/6/66/Funny-Face_Glasses.png/revision/latest?cb=20130322171409" height="170" width="300"></div>
+      
+   <div id="mydiv4"><img src="https://ubisafe.org/images/colored-clipart-sunglasses-3.png" height="100" width="200"></div>
+      
+   <div id="mydiv5"><img src="https://mbtskoudsalg.com/images/funny-hat-png-1.png" height="95" width="150"></div>
+      
+   <div id="mydiv6"><img src="https://mbtskoudsalg.com/images/mustache-clipart-png-7.png" height="50" width="100"></div>
+      
+    <div id="mydiv7"><img src="https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Hats-PNG/Police_Hat_PNG_Clip_Art.png?m=1507172103" height="150" width="250"></div>
+      
+      
+      
+<!--      end of items-->
+  </div>
+
+  
+     
+     
+     
+  <script>
+//Make the DIV element draggagle:
+dragElement(document.getElementById("mydiv"));
+dragElement(document.getElementById("mydiv2"));
+dragElement(document.getElementById("mydiv3"));
+dragElement(document.getElementById("mydiv4"));
+dragElement(document.getElementById("mydiv5"));
+dragElement(document.getElementById("mydiv6"));
+dragElement(document.getElementById("mydiv7"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
+     
+  
+ </body>
+</html>
+
+ 
+  

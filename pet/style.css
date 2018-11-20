@@ -1,0 +1,72 @@
+#mydiv {
+    position: absolute;
+    z-index: 9;
+    text-align: center;
+    cursor: move;
+    
+}
+
+
+#mydiv2 {
+    position: absolute;
+    z-index: 9;
+    text-align: center;
+    cursor: move;
+    
+}
+
+#mydiv3 {
+    position: absolute;
+    z-index: 9;
+    text-align: center;
+    cursor: move;
+    
+}
+
+#mydiv4 {
+    position: absolute;
+    z-index: 9;
+    text-align: center;
+    cursor: move;
+    
+}
+
+#mydiv5 {
+    position: absolute;
+    z-index: 9;
+    text-align: center;
+    cursor: move;
+    
+}
+
+#mydiv6 {
+    position: absolute;
+    z-index: 9;
+    text-align: center;
+    cursor: move;
+    
+}
+
+#mydiv7 {
+    position: absolute;
+    z-index: 9;
+    text-align: center;
+    cursor: move;
+    
+}
+
+#center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#title{
+    font-family: cursive;
+    color: hotpink;
+    margin-left: 30px;
+}
+#container{
+    flex-wrap: nowrap;
+}
