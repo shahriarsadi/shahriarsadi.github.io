@@ -1,0 +1,76 @@
+.heading{
+     font-family: "KoHo";font-size: 20px;
+    text-align: right;
+    color: black;
+    cursor: 
+}
+u:hover{
+ cursor: pointer;
+}
+.responsive {
+    margin-left: auto;
+    margin-right: auto;
+    margin align-content: center
+    
+    width:50px;
+    height: 100px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 1px;
+  background:"https://webgradients.com/public/webgradients_png/047%20Fly%20High.png";
+  padding: 1px;
+}
+.textbox {
+    margin: auto;
+    margin align-content: center;
+}
+body {
+    font-family: 'Rancho';font-size: 35px;
+    text-align: center;
+    color: darkslateblue;
+}
+.grid-container2 {
+  display: grid;
+  font-family: "KoHo";font-size: 25px;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto;
+  grid-gap: none;
+  background:"https://www.xmple.com/wallpaper/pink-blue-gradient-linear-1920x1080-c2-87cefa-ffb6c1-a-15-f-14.svg";
+  padding: none;
+}
+@nextSong() heartBeat {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  14% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  28% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  42% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.heartBeat {
+  -webkit-animation-name: heartBeat;
+  animation-name: heartBeat;
+  -webkit-animation-duration: 1.3s;
+  animation-duration: 1.3s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
